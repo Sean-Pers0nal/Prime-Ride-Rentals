@@ -1,0 +1,579 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General Body Style */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2A5069;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('../images/homesupra.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-text-box {
+    background-color: #fff;
+    color: #000;
+    padding: 20px 30px;
+    border: 2px solid #e74c3c;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+}
+
+.hero-text-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+}
+
+.hero-text-box p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Georgia', serif;
+}
+
+.hero-text-box .cta {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-text-box .cta span {
+    margin-left: 10px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Car List */
+.car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.car-section {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.car-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.car-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.car-item h4 {
+    margin: 10px 0;
+}
+
+.car-item p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.car-item button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.car-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Cars Section */
+.cars-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cars-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cars-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.car-grid {
+    justify-items: center;
+    grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 2%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about {
+    font-size: 2rem;
+}
+
+.about-section {
+    background-image: url('../images/AboutHome.png');
+    background-size: cover;
+    background-position: 20%;
+    color: #000;
+    height: auto;
+    padding: 40px;
+    text-align: left;
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    word-wrap: break-word; /* Allow long words to break */
+    overflow-wrap: break-word; /* Allow long words to wrap */
+}
+
+.about-section p {
+    text-align: left;
+    width: 100%; /* Use full width for responsiveness */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    font-size: 1.5rem; /* Adjust font size to fit better on mobile */
+    margin: 20px; /* Reduce margin for mobile */
+    padding: 0 10px; /* Horizontal padding for breathing room */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    width: 715px;
+    font-size: 2rem;
+    margin: 40px;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+    background-color: #2A5069;
+    color: #000000;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.best-sellers h2,
+.best-sellers h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 60%;
+    text-align: center;
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-card h4 {
+    margin: 10px 0;
+}
+
+.car-card p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.car-card button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.car-card button:hover {
+    background-color: #c0392b;
+}
+
+/* Car List */
+.car-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual car item layout */
+.car-item {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    gap: 20px;
+    position: relative;
+}
+
+/* Car image styling */
+.car-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Car details container: will include name and features */
+.car-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensure vertical centering */
+    flex-grow: 1;
+}
+
+/* Car name (aligned closer to the image) */
+.car-item h4 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Car features */
+.car-features {
+    margin-top: 5px; /* Slight margin between name and features */
+}
+
+.car-features p {
+    margin: 2px 0; /* Tighter spacing between features */
+    font-size: 14px;
+}
+
+/* "Book Now" button styling */
+.book-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.book-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Shop Hours Table */
+.shop-hours table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.shop-hours table,
+.shop-hours th,
+.shop-hours td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.shop-hours th {
+    background-color: #FFF09A;
+    color: #000;
+}
+
+.shop-hours td {
+    background-color: #f9f9f9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2A5069;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+.social p {
+    margin: 0;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: url('../images/homesupra.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.form-wrapper {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.gitnakita h1 {
+    text-decoration: bold;
+    text-align: center;
+}
+
+.leftkita {
+    text-align: left;
+}
+
+.contact-info {
+    text-align: right;
+    width: 45%;
+    background-color: none;
+    padding: 20px;
+    color: rgb(51, 88, 86);
+}
+
+.contact-info h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2A5069;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1e3e53;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-wrapper,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .car-item button {
+        width: 100%;
+    }
+
+    /* Additional adjustments */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        padding: 100px 20px;
+    }
+
+    .cars-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .about-section p {
+        font-size: 1rem; /* Smaller font size for better fit */
+        margin: 10px; /* Smaller margins on mobile */
+        padding: 0 5px; /* Even more horizontal padding */
+    }
+    
+}
+/* General Tablet Styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Header Adjustments */
+    header {
+        flex-direction: row; /* Ensure it displays as a row */
+    }
+
+    /* Car grid adjustments for tablet */
+    .car-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        padding: 5%;
+    }
+}
